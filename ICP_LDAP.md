@@ -96,7 +96,7 @@ userpassword: {MD5}JMnhXlKvxHwiW3V+e+4fnQ==
 ```bash
 ldapadd -x -D cn=admin,dc=mycluster,dc=icp -W -f add_content.ldif
 
-ldapsearch -x -LLL -b dc=demo,dc=com 'uid=john' cn gidNumber
+ldapsearch -x -LLL -b dc=mycluster,dc=icp 'uid=demo' cn sn
 ```
 
 # Parametrise LDAP in ICP
